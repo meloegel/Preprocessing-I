@@ -1,11 +1,14 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu&display=swap');
+  </style>
   <title>My Resume</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +17,83 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav>
+      <a href='index.html'>Home</a>
+      <a href='about.html'>About</a>
+      <a href='portfo.html'>Portfolio</a>
+      <a href='contact.html'>Contact</a>
+    </nav>
+  </header>
+  <section id="topSection">
+    <div>
+      <img src="stockphoto.png" alt="stock resume photo.png">
+      <h1>Mark Loegel - Web Dev</h1>
+      <h2>Technology is my jam!</h2>
+    </div>
+    <div id="borderP">
+      <p>Occasionally I have time to work on side projects, let me know by signing up on this website.</p>
+      <div id="but"><button onclick="location.href = 'contact.html';">Lets Team Up</button></div>
+    </div>
+  </section>
+  <section id='middleSection'>
+    <div>
+      <h3>Listen Up...</h3>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
+        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est
+        et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+    </div>
+    <div>
+      <h3>Stuff I'm Good At: </h3>
+      <ul>
+        <li>Disc Golf</li>
+        <li>Coding up UI</li>
+        <li>Playing lots of video games</li>
+        <li>Using bootstrap grid</li>
+        <li>Taking long naps</li>
+      </ul>
+    </div>
+  </section>
+  <section id='bottomSection'>
+    <h3>Work History</h3>
+    <table id='table' width=100%;>
+      <tr>
+        <th>Yrs</th>
+        <th>Company</th>
+        <th>Title</th>
+        <th>Tech Used</th>
+      </tr>
+      <tr class='gray'>
+        <td>1</td>
+        <td>Apple</td>
+        <td>Software Engineer</td>
+        <td>Swift</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Microsoft</td>
+        <td>Computer Scientist</td>
+        <td>.NET</td>
+      </tr>
+      <tr class='gray'>
+        <td>3</td>
+        <td>Amazon</td>
+        <td>Dev Ops</td>
+        <td>AWS</td>
+      </tr>
+    </table>
+  </section>
+  <footer>
+    <nav>
+      <a href='index.html'>Home</a>
+      <a href='about.html'>About</a>
+      <a href='portfo.html'>Portfolio</a>
+      <a href='contact.html'>Contact</a>
+    </nav>
+  </footer>
 </body>
+
 </html>
+
